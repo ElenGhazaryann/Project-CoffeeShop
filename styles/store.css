@@ -1,0 +1,44 @@
+.bg {
+  background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+  overflow: hidden;
+}
+
+/* Section */
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* padding: 0 1.5em; */
+}
+.section-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 100px 0;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+  outline: 1px solid;
+}
