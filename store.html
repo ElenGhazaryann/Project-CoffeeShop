@@ -82,6 +82,105 @@
           </div>
         </div>
       </section>
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button id="buy" class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+
+        <!-- Modal -->
+        <div class="modalClass-container" id="modalId-container">
+          <div class="modal">
+            <!-- <p>Thank you for your order.</p> -->
+            <form action="" name="cardForm" class="holderClass">
+              <div class="row holderClass">
+                <div class="col holderClass">
+                  <h3 class="title">billing address</h3>
+
+                  <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="John Deo" />
+                  </div>
+                  <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@Gmail.com" />
+                  </div>
+                  <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="street - locality" />
+                  </div>
+                  <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Yerevan" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>state :</span>
+                      <input type="text" placeholder="Armenia" />
+                    </div>
+                    <div class="inputBox">
+                      <span>zip code :</span>
+                      <input type="text" placeholder="123 456" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <h3 class="title">payment</h3>
+
+                  <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="./img/card_img.png" alt="" />
+                  </div>
+                  <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Mr. John Deo" />
+                  </div>
+                  <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" />
+                  </div>
+                  <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>exp year :</span>
+                      <input type="number" placeholder="2022" />
+                    </div>
+                    <div class="inputBox">
+                      <span>CVV :</span>
+                      <input type="text" placeholder="1234" />
+                    </div>
+                  </div>
+                </div>
+                <!-- <button type="submit" class="submit-btn">proceed to checkout</button> -->
+              </div>
+
+              <!-- <input type="submit" value="proceed to checkout" class="submit-btn"> -->
+              <button type="submit" class="submit-btn">
+                proceed to checkout
+              </button>
+              <div class="close-btn">
+                <!-- <button id="close" class="close">X</button> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
