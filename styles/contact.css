@@ -62,3 +62,25 @@
   transition: 0.5s;
 }
 
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1.5px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+.registration-form h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
