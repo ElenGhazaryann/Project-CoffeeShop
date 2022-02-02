@@ -1,0 +1,174 @@
+/* body */
+.bg {
+  background-image: url(https://image.freepik.com/free-photo/top-view-female-barista-holding-cup-coffee_23-2148824445.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #24262b;
+  z-index: 4;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+  height: 88vh;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.company-info {
+  /* background-color: rgba(164 127 108 / 60%); */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 45%;
+}
+.company-info p {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.registration-form {
+  /* background-color: rgba(164 127 108 / 60%); */
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 45%;
+  padding: 0 50px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5% 0;
+  transition: 0.5s;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1.5px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+.registration-form h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: rgb(250, 246, 246);
+  text-decoration: none;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.submit {
+  background-color: white;
+  color: #000;
+  border-radius: 0.3em;
+  padding: 0.7em 1em;
+  margin-top: 3em;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  border: 0;
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .company-info {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .registration-form {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    align-self: end;
+  }
+}
+
+@media (max-width: 590px) {
+  .wrapper {
+    margin-top: 25%;
+  }
+
+  .header {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrapper {
+    margin-top: 50%;
+  }
+  
+}
