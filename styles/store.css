@@ -234,3 +234,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 80px;
 }
+
+/* Media */
+@media (max-width: 560px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
