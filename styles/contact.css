@@ -84,3 +84,33 @@ input {
   position: relative;
 }
 
+
+::placeholder {
+  font-size: 16px;
+  color: rgb(250, 246, 246);
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.submit {
+  background-color: white;
+  color: #000;
+  border-radius: 0.3em;
+  padding: 0.7em 1em;
+  margin-top: 3em;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  border: 0;
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
