@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoffeeShop | Store</title>
+    <link rel="icon" href="./img/icon.jpg" type="image/x-icon" />
+    <meta name="description" content="This is the description" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="./styles/store.css" />
+    <link rel="stylesheet" href="./styles/payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script src="store.js" async></script>
+    <script src="payment.js" async></script>
+  </head>
+  <body>
+    <div class="bg">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="logo"><a href="index.html">CoffeeShop</a></h1>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav-link nav-link-animate" href="index.html">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav-link nav-link-animate" href="#">Store</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav-link nav-link-animate" href="contact.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section class="container content-section">
+        <h2 class="section-header">OUR MENU</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Cappuccino</span>
+            <div class="img">
+              <img class="shop-item-image" src="./img/store-1.jpg" />
+            </div>
+            <div class="shop-item-details">
+              <span class="shop-item-price">$4.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Espresso</span>
+            <div class="img">
+              <img class="shop-item-image" src="./img/espressor.jpg" />
+            </div>
+            <div class="shop-item-details">
+              <span class="shop-item-price">$2.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Latte</span>
+            <div class="img">
+              <img class="shop-item-image" src="./img/latte.jpeg" />
+            </div>
+            <div class="shop-item-details">
+              <span class="shop-item-price">$4.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button id="buy" class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+
+        <!-- Modal -->
+        <div class="modalClass-container" id="modalId-container">
+          <div class="modal">
+            <!-- <p>Thank you for your order.</p> -->
+            <form action="" name="cardForm" class="holderClass">
+              <div class="row holderClass">
+                <div class="col holderClass">
+                  <h3 class="title">billing address</h3>
+
+                  <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="John Deo" />
+                  </div>
+                  <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@Gmail.com" />
+                  </div>
+                  <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="street - locality" />
+                  </div>
+                  <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Yerevan" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>state :</span>
+                      <input type="text" placeholder="Armenia" />
+                    </div>
+                    <div class="inputBox">
+                      <span>zip code :</span>
+                      <input type="text" placeholder="123 456" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <h3 class="title">payment</h3>
+
+                  <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="./img/card_img.png" alt="" />
+                  </div>
+                  <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Mr. John Deo" />
+                  </div>
+                  <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" />
+                  </div>
+                  <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>exp year :</span>
+                      <input type="number" placeholder="2022" />
+                    </div>
+                    <div class="inputBox">
+                      <span>CVV :</span>
+                      <input type="text" placeholder="1234" />
+                    </div>
+                  </div>
+                </div>
+                <!-- <button type="submit" class="submit-btn">proceed to checkout</button> -->
+              </div>
+
+              <!-- <input type="submit" value="proceed to checkout" class="submit-btn"> -->
+              <button type="submit" class="submit-btn">
+                proceed to checkout
+              </button>
+              <div class="close-btn">
+                <!-- <button id="close" class="close">X</button> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="row">
+          <div class="row-items">
+            <h4>Company</h4>
+            <h3><a href="./index.html">Home</a></h3>
+            <h3><a href="./store.html">Store</a></h3>
+          </div>
+
+          <div class="row-items">
+            <h4>Contact</h4>
+            <h3><a href="contact.html">Phone</a></h3>
+            <h3><a href="contact.html">E-Mail</a></h3>
+            <h3><a href="contact.html">Location</a></h3>
+          </div>
+          <div class="row-items row-social">
+            <h4>Follow Us</h4>
+            <div class="social-media">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://web.telegram.org/z/"
+                ><i class="fab fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

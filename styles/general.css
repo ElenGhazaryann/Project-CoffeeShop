@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.logo {
+  font-family: 'Comforter', cursive;
+  font-size: 2.5rem;
+}
+
+.logo > a {
+  color: #fff;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list-item {
+  margin-left: 2.5em;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0px;
+  margin: 0px 5px;
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 1px;
+  content: '';
+  position: absolute;
+  background-color: #fff;
+}
+
+.nav-link-animate::before {
+  width: 0%;
+  bottom: 1px;
+}
+
+.nav-link-animate:hover::before {
+  width: 100%;
+}
+
+/* Footer */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(7, 7, 7);
+  width: 100%;
+}
+.row-items {
+  width: 100px;
+  margin: 20px;
+}
+.row-social {
+  width: 200px;
+}
+footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+}
+footer h3 {
+  font-size: 16px;
+  font-weight: 450;
+}
+footer h3:hover {
+  color: rgb(206, 202, 202);
+  padding-left: 10px;
+}
+.social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.social-media a:hover {
+  color: #24262b;
+  background-color: white;
+}
